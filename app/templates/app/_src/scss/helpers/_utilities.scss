@@ -39,13 +39,26 @@
 .pull-left { float:left ; }
 .pull-none { float:none ; }
 
-// Align Center
+// Align
 .align-center {
   text-align:center;margin:0 auto;display:block;vertical-align: middle;
 }
 
+.align-left {
+  text-align:left;
+}
+
+.align-right {
+  text-align:right;
+}
+
 // Indent
 .indent { span {display:none;} }
+
+// Transition
+.transition {
+  @include transition(all, 0.2s, ease-in-out);
+}
 
 // Help cursor
 .informative { cursor:help; }
@@ -71,6 +84,31 @@
     hidden;
 }
 
+// Divider
+.divider {}
+
+// Title Align
+.title-left {
+  text-align:left;
+  img {
+    float:left;
+  }
+}
+
+.title-center {
+  text-align:center;
+  img {
+    float:none;margin:0 auto;
+  }
+}
+
+.title-right {
+  text-align:right;
+  img {
+    float:right;
+  }
+}
+
 // Display Show/Hide
 .hide, [hidden] {
   margin: -1px;
@@ -89,48 +127,48 @@
 [disabled] { @include opacity(0.6); }
 
 // No Padding
-.no-padding {padding:0;}
-.no-padding-top {padding-top:0;}
-.no-padding-right {padding-right:0;}
-.no-padding-bottom {padding-bottom:0;}
-.no-padding-left {padding-left:0;}
+.no-padding {padding:0!important;}
+.no-padding-top {padding-top:0!important;}
+.no-padding-right {padding-right:0!important;}
+.no-padding-bottom {padding-bottom:0!important;}
+.no-padding-left {padding-left:0!important;}
 
 // Padding (top, right, bottom, left)
-.padding-top-5 {padding-top:5px;}
-.padding-top-10 {padding-top:10px;}
-.padding-top-15 {padding-top:15px;}
-.padding-top-20 {padding-top:20px;}
-.padding-top-25 {padding-top:25px;}
-.padding-top-30 {padding-top:30px;}
-.padding-top-40 {padding-top:40px;}
-.padding-top-50 {padding-top:50px;}
+.padding-top-5 {padding-top:5px!important;}
+.padding-top-10 {padding-top:10px!important;}
+.padding-top-15 {padding-top:15px!important;}
+.padding-top-20 {padding-top:20px!important;}
+.padding-top-25 {padding-top:25px!important;}
+.padding-top-30 {padding-top:30px!important;}
+.padding-top-40 {padding-top:40px!important;}
+.padding-top-50 {padding-top:50px!important;}
 
-.padding-right-5 {padding-right:5px;}
-.padding-right-10 {padding-right:10px;}
-.padding-right-15 {padding-right:15px;}
-.padding-right-20 {padding-right:20px;}
-.padding-right-25 {padding-right:25px;}
-.padding-right-30 {padding-right:30px;}
-.padding-right-40 {padding-right:40px;}
-.padding-right-50 {padding-right:50px;}
+.padding-right-5 {padding-right:5px!important;}
+.padding-right-10 {padding-right:10px!important;}
+.padding-right-15 {padding-right:15px!important;}
+.padding-right-20 {padding-right:20px!important;}
+.padding-right-25 {padding-right:25px!important;}
+.padding-right-30 {padding-right:30px!important;}
+.padding-right-40 {padding-right:40px!important;}
+.padding-right-50 {padding-right:50px!important;}
 
-.padding-bottom-5 {padding-bottom:5px;}
-.padding-bottom-10 {padding-bottom:10px;}
-.padding-bottom-15 {padding-bottom:15px;}
-.padding-bottom-20 {padding-bottom:20px;}
-.padding-bottom-25 {padding-bottom:25px;}
-.padding-bottom-30 {padding-bottom:30px;}
-.padding-bottom-40 {padding-bottom:40px;}
-.padding-bottom-50 {padding-bottom:50px;}
+.padding-bottom-5 {padding-bottom:5px!important;}
+.padding-bottom-10 {padding-bottom:10px!important;}
+.padding-bottom-15 {padding-bottom:15px!important;}
+.padding-bottom-20 {padding-bottom:20px!important;}
+.padding-bottom-25 {padding-bottom:25px!important;}
+.padding-bottom-30 {padding-bottom:30px!important;}
+.padding-bottom-40 {padding-bottom:40px!important;}
+.padding-bottom-50 {padding-bottom:50px!important;}
 
-.padding-left-5 {padding-left:5px;}
-.padding-left-10 {padding-left:10px;}
-.padding-left-15 {padding-left:15px;}
-.padding-left-20 {padding-left:20px;}
-.padding-left-25 {padding-left:25px;}
-.padding-left-30 {padding-left:30px;}
-.padding-left-40 {padding-left:40px;}
-.padding-left-50 {padding-left:50px;}
+.padding-left-5 {padding-left:5px!important;}
+.padding-left-10 {padding-left:10px!important;}
+.padding-left-15 {padding-left:15px!important;}
+.padding-left-20 {padding-left:20px!important;}
+.padding-left-25 {padding-left:25px!important;}
+.padding-left-30 {padding-left:30px!important;}
+.padding-left-40 {padding-left:40px!important;}
+.padding-left-50 {padding-left:50px!important;}
 
 // No Margin
 .no-margin {margin:0;}

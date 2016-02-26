@@ -7,29 +7,42 @@ table, th, td {
   border: none;
 }
 table {
-  width: 100%;display: table;  border-collapse: collapse; border-spacing: 0;
+  width: 100%;display: table;  border-spacing: 0;border-collapse: separate;
 }
 thead {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background:#f4f4f4;border-bottom: 1px solid rgba(0, 0, 0, 0.04);font-weight:400;
 }
 td, th {
-  padding: 15px 5px;
+  padding: 12px 15px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
   background-clip: padding-box;
   @include border-radius(2px);
 }
+tbody td {
+  @include font-size(15px);
+}
 
 // Bordered
 .bordered {
+  border:1px solid rgba(0,0,0, 0.08);
+
+  @include border-radius(4px);
+
 	tr {
-		border-bottom: 1px solid  rgba(0, 0, 0, 0.08);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    &:last-child {
+      border:0;
+    }
 	}
 }
 
 // Striped
 .striped {
+  thead {
+    background:#fff;
+  }
 	tbody {
 		tr {
 			&:nth-child(odd) { background-color: #f2f2f2; }
@@ -39,55 +52,15 @@ td, th {
 
 // Centered
 .centered {
-	thead tr th, table.centered tbody tr td { text-align: center; }
+	thead tr th, tbody tr td { text-align: center; }
 }
 
 // Hoverable
 .hoverable {
 	tbody {
 	 tr {
-	 	@include transition(background-color, .25s, ease-in-out);
+	 	@extend .transition;
 	 	&:hover { background-color: #f2f2f2; }
 	 }
-	}
-}
-
-// Table Theme
-.table-content {
-	.cod {
-		text-align:center;width:50px;font-size:12px;
-	}
-	.table-item {
-		width:100%;
-
-		td {
-			font-size:14px;
-		}
-	}
-	.actions-header {
-		width:120px;
-	}
-	.actions {
-
-		@include transition(opacity, .25s, ease-in-out);
-		a {
-			float:left;color:#999;font-size:18px;margin:0 5px;
-		}
-
-		.btn-edit {
-			&:hover {
-				color:$dark-opacity-color;
-			}
-		}
-		.btn-remove {
-			&:hover {
-				color:color($red, 600);
-			}
-		}
-		.btn-config {
-			&:hover {
-				color:$dark-opacity-color;
-			}
-		}
 	}
 }

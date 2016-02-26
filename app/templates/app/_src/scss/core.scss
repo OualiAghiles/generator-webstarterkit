@@ -10,7 +10,7 @@
 
 @if $global-use-base-architecture == true {
 
-  // Generics
+  // Helpers
   @import "helpers/mixins";
   @import "helpers/utilities";
   @import "helpers/reset";
@@ -26,12 +26,24 @@
   @import "base/grid";
   @import "base/icons";
   @import "base/flexbox";
+  @import "base/flexbox-grid";
   @import "base/headings";
   @import "base/list";
 
   // Components
+  @import "components/alert";
+  @import "components/article";
   @import "components/buttons";
   @import "components/breadcrumb";
+  @import "components/badge";
+  @import "components/footer";
+  @import "components/header";
+  @import "components/navigation";
+  @import "components/panel";
+  @import "components/dialog";
+  @import "components/loading";
+  @import "components/collapse";
+  @import "components/pagination";
 
   // Layout
   @import "layout/main";

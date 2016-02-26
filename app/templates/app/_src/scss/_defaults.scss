@@ -15,7 +15,8 @@ $base-size-container: 80em!default; // 1260px in font-size:16px;
 $primary-color: #434F66 !default;
 $secondary-color: #4275F4 !default;
 $divider-color: #b6b6b6 !default;
-$light-color: #f8f8fc!default;
+$ui-color: #f5f5f5 !default;
+$light-color: #e5e5e5!default;
 $dark-color: #2d2d2d!default;
 
 // Font Color
@@ -56,6 +57,7 @@ $base-rounded-radius: 28px!default;
 
 // Use Defaults
 $use-flexbox: true!default;
+$use-flexbox-grid: true!default;
 $use-depths: true!default;
 $use-base-grid: true!default;
 $use-base-icons: true!default;

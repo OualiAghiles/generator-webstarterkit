@@ -5,7 +5,7 @@
 .button {
   position:relative;
   margin: 0;
-  padding: 0 2rem;
+  padding: 0 12px;
   border: none;
   overflow: visible;
   outline: 0;
@@ -21,6 +21,7 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   -webkit-appearance: none;
 
   @extend .depth1;
@@ -42,6 +43,14 @@
   i {
     font-size:$base-font-size;
   }
+
+
+  // Badge Notification
+  .badge-notification {
+    position:absolute;top:1px;right:1px;
+    @extend .depth;
+  }
+
 }
 
 // Button Rounded
@@ -49,9 +58,9 @@
   @include border-radius($base-rounded-radius);
 }
 
-// Button Unstyle
-.button-unstyle {
-  background:transparent!important;
+// Button Clear
+.button-clear {
+  background:transparent;
   @extend .no-depth;
 
   &:hover {
@@ -67,6 +76,12 @@
 // Button Circle
 .button-circle {
   @include border-radius($base-circle-radius);
+  min-height:38px;
+  line-height:38px;
+  min-width:38px;
+  width:38px;
+  padding:0;
+  i {font-size:12px;}
 }
 
 // Button Rounded
@@ -94,12 +109,13 @@
 
 // Button Error
 .button-error {
-  background:color($red, 500);
+  background-color:color($red, 500);
   color:color($light, 1000);
+  i {color:color($light, 1000);}
 }
 // Button Success
 .button-success {
-  background:color($green, 500);
+  background:#64DD17;
   color:color($light, 1000);
 }
 // Button Info
