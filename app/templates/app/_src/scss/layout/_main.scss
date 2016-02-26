@@ -1,0 +1,156 @@
+/* Main Styles */
+/***********************************/
+
+// Pattern
+html {
+	background:#f8f8fa;
+}
+
+// Main
+main {
+	@include transition(all, 0.2s, ease-in-out);
+
+	// Logo
+  .logo {
+		width: 500px;
+		height: 130px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -250px;
+		margin-top: -82px;
+  }
+
+	// Hero Header
+	.hero {
+		display:block;clear:left;text-align:center;width:100%;color:#fff;margin-top:140px;margin-bottom:60px;
+		h2 {font-size:48px;font-family: $base-font-title;font-weight:400;margin-bottom:10px;color:#fff;}
+		strong {font-size:16px;font-weight:400;}
+	}
+
+	//  Menu
+	.button-github {
+		float:right;position:absolute;right:0;top:16px;
+	}
+	.navigation {
+		margin:4px 0;float:right;padding-right:80px;position:relative;
+
+		li {
+			float:left;
+			a {
+				color:#fff;text-decoration: none;padding:6px 16px;margin:10px 5px;
+				@include border-radius(28px);
+				@include transition(all, 0.2s, ease-in-out);
+				&:hover {background:rgba(0,0,0,.1);}
+			}
+		}
+		.active {
+			a {background:rgba(0,0,0,.1);font-weight:600;}
+		}
+	}
+
+
+	// Buttons Interactions
+	.buttons-interactions {
+		position:absolute;left:50%;top:50%;margin-left:-135px;margin-top:22px;
+
+		.button {
+			@extend .button-rounded;
+			background:$secondary-color;color:#fff;
+		}
+		.button-docs {
+			background:$secondary-color;color:#fff;
+		}
+	}
+
+	// Bar
+	.bar {
+		margin-bottom:30px;display:table;width:100%;padding:20px 0;
+		//@include background-gradient($secondary-color, #356AD3);
+		background:$secondary-color;
+
+
+		@extend .depth1;
+
+		// Bar: Title
+		.title {
+			display:table;margin:5px auto;float:left;
+			img {
+				float:left;max-height:52px;
+			}
+			small {
+				color:#fff;font-size:14px;float:right;margin-top:16px;
+			}
+		}
+	}
+
+	// Sidebar
+	.sidebar {
+		background: #fff;
+		@extend .col3;
+		@extend .depth1;
+		@include border-radius(4px);
+
+		// Sidebar Divider
+		.sidebar-divider {
+			border-bottom:1px solid #e5e5e5;font-weight:600;
+			padding: 15px 10px;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-family: $base-font-title;
+			color: #999;
+			@include border-radius-separate(4px, 4px, 0, 0);
+		}
+
+		// Sidebar Content
+		.sidebar-content {
+			.item {
+				text-decoration:none;padding:8px;border-bottom:1px solid #e5e5e5;
+				&:hover {
+					background:rgba(0,0,0,.05);color:$secondary-color;
+				}
+				&:last-child {
+					border:0;
+				}
+			}
+		}
+	}
+
+	// Container
+	.container {
+		@extend .col9;
+		@extend .push3;
+
+		// Top Container
+		.top-container {
+			margin-bottom:20px;
+			.top-container-title {
+				font-size:32px;font-weight:400;margin-bottom:5px;font-family: $base-font-title;
+			}
+		}
+	}
+
+	// Item Template
+	.item-template {
+		background:#fff;text-align:center;
+		@extend .depth1;
+		@include transition(all, 0.2s, ease-in-out);
+		@include border-radius(4px);
+
+		&:hover {
+			@extend .depth3;
+		}
+
+		a {
+			height:250px;line-height:250px;font-size:14px;text-decoration: none;display:block;margin:5px;background:#f1f1f1;
+			@include border-radius(4px);
+		}
+	}
+
+
+	// Footer
+	.footer {
+		.content {text-align:center;padding:40px 0;display:table;border-top:1px solid rgba(0,0,0,0.06);margin-top:40px;color:#999;}
+	}
+
+}
