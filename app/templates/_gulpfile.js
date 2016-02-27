@@ -7,12 +7,12 @@
   var gulp = require('gulp');
   var watch = require('gulp-watch');
   var sass = require('gulp-sass');
-  var concat = require('gulp-concat');
   var gutil = require('gulp-util');
   var jshint = require('gulp-jshint');
   var connect = require('gulp-connect');
   var useref = require('gulp-useref');
   var historyApiFallback = require('connect-history-api-fallback');
+  var concatFiles = require('gulp-concat');
   var psi = require('psi');
 
   // URL Site
@@ -42,7 +42,7 @@
   gulp.task('styles', function () {
   return gulp.src(paths.styles)
     .pipe(sass({outputStyle: 'expanded', errLogToConsole: true}))
-    .pipe(concat('webstarterkit.css'))
+    .pipe(concatFiles('webstarterkit.css'))
     .pipe(gulp.dest('app/stylesheets'))
     .pipe(connect.reload());
   });

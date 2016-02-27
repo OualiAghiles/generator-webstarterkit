@@ -1,6 +1,6 @@
 {
   "name": "generator-webstarterkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A front-end architeture generator that helps you build fast, modern mobile and browser web apps.",
   "author": "Allan Alexandre",
   "main": "app/index.js",
