@@ -31,4 +31,5 @@ $ yo webstarterkit
 ### License
 
 Apache 2.0  | Copyright 2016 Google Inc
+
 All Rights Reserved to https://developers.google.com/web/starter-kit
