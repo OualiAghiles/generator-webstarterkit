@@ -30,6 +30,8 @@ $ yo webstarterkit
 
 ### License
 
+All Rights Reserved to https://developers.google.com/web/starter-kit
+
 Apache 2.0  
 Copyright 2015 Google Inc
 
