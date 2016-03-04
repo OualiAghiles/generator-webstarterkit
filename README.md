@@ -28,3 +28,9 @@ $ yo webstarterkit
 * yeoman
 * gulp
 
+### License
+
+Apache 2.0  
+Copyright 2015 Google Inc
+
+
