@@ -1,15 +1,23 @@
 {
   "name": "generator-webstarterkit",
-  "version": "0.0.4",
-  "description": "A front-end architeture generator that helps you build fast, modern mobile and browser web apps.",
+  "version": "0.0.5",
+  "description": "A front-end template that helps you build fast, modern mobile web apps.",
   "author": "Allan Alexandre",
+  "repository": "allanalexandre/generator-webstarterkit",
   "main": "app/index.js",
+  "engines": {
+    "node": ">=0.12.7"
+  },
   "files": [
     "app"
   ],
   "keywords": [
-    "starterkit",
-    "yeoman-generator"
+    "webstarterkit",
+    "yeoman-generator",
+    "web",
+    "app",
+    "front-end",
+    "mobile"
   ],
   "dependencies": {
     "chalk": "^1.1.1",
